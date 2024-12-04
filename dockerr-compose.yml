@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ordrs-app:
+    image: moazhaggag/ordrs-app:v1.0
+    container_name: ordrs-app
+#    environment:
+#      - KAFKA_BROKER=
+#      - KAFKA_TOPIC=orderss
+#      - TOTAL_RECORDS=100
+#      - BATCH_SIZE=5
+#      - FREQUENCY_MS=1000
+#      - DB_URL=jdbc:postgresql://ah-data-lab.duckdns.org:35432/moaz_db
+#      - DB_USER=moaz
+#      - DB_PASSWORD=moaz
+#      - CUSTOMERS_TABLE=customers
+#      - PRODUCTS_TABLE=productstess
+#      - ORDERS_TABLE=orders
