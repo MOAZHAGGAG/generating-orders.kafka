@@ -1,0 +1,11 @@
+services:
+  orders-generator:
+    image: moazhaggag/order-generator:latest  # Use the Docker Hub image you pushed
+    container_name: order-generator
+    working_dir: /order-generator
+    environment:
+      KAFKA_BROKER: host.docker.internal:29092    # The Kafka broker address
+      TOPIC_NAME: orders_topic                    # Default topic name
+      TOTAL_RECORDS: 10000                        # Total records to produce
+      RECORDS_PER_FREQUENCY: 5                    # Records to produce per frequency
+      PRODUCE_FREQUENCY_SECONDS: 3                # Frequency to produce records (in seconds)
